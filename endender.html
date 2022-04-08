@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- Font Awesome link-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Interfaz de Horno</title>
+        <script src="js/index.js"></script>
+        <script src="../electro.js"></script>
+    </head>
+    <body>
+        <div id="divHora">
+            <script>
+                var d = new Date();
+                if(d.getMinutes()<10)
+                    document.write(d.getHours()+':0'+d.getMinutes());
+                else
+                    document.write(d.getHours()+':'+d.getMinutes());
+            </script>
+        </div>
+        <div id="on">
+            <div>
+                <a class="fas fa-power-off" href="idioma.html"></a>
+            </div>
+            
+        </div>
+    </body>
